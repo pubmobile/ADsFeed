@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <span class="brand" data-text="header.brand"></span>
+    <span class="topbar-label" data-text="header.label"></span>
+  </header>
+
+  <main class="feed">
+
+    <section class="feed-header">
+      <p class="section-label" data-text="feed.label"></p>
+      <h1 data-text="feed.title"></h1>
+      <p class="feed-description" data-text="feed.description"></p>
+    </section>
+
+    <section
+      id="feedList"
+      class="feed-list"
+      aria-live="polite"
+    ></section>
+
+    <div
+      id="loadError"
+      class="load-error"
+      hidden
+    ></div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
